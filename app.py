@@ -59,7 +59,7 @@ app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY') or 'a-very-secret-key-fo
 csrf = CSRFProtect(app)
 
 # Initialize SocketIO
-socketio = SocketIO(app, cors_allowed_origins="*")
+socketio = SocketIO(app, cors_allowed_origins="*", async_mode='gevent')
 
 # Initialize Flask-Login
 login_manager = LoginManager()

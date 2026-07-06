@@ -2,7 +2,7 @@ flask
 flask-socketio
 flask-login
 flask-wtf
-eventlet
+gevent
 numpy
 pandas
 scikit-learn
